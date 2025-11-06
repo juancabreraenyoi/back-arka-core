@@ -7,7 +7,7 @@ import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
-@SuperBuilder
+@SuperBuilder(toBuilder = true)
 public class Cliente extends Persona {
         private String celular;
         private boolean activo;
