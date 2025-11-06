@@ -1,12 +1,12 @@
 package com.arka.mappers;
 
 import com.arka.entities.client.Cliente;
-import com.arka.request.ClientResquest;
+import com.arka.request.ClientRequest;
 import com.arka.response.ClientResponse;
 
 public class ClientMapper {
 
-    public static Cliente requestToDomain(ClientResquest clientResquest){
+    public static Cliente requestToDomain(ClientRequest clientResquest){
          return Cliente.builder()
                 .nombre(clientResquest.getNombre())
                 .apellido(clientResquest.getApellido())
