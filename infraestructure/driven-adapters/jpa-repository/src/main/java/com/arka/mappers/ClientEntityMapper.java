@@ -12,6 +12,7 @@ public interface ClientEntityMapper {
     ClientEntityMapper INSTANCE = Mappers.getMapper(ClientEntityMapper.class);
 
     @Mapping(source = "celular", target = "telefono")
+    @Mapping(target = "id", ignore = true)
     ClientEntity mapperDomainToEntity(Cliente cliente);
 
     @Mapping(source = "telefono", target = "celular")

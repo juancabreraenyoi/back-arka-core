@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 
 import java.util.Objects;
 
-
 @RequiredArgsConstructor
 public class ClientUseCase {
 
