@@ -10,6 +10,7 @@ include(":http-client",
         ":app-service",
         ":api-rest",
         ":jpa-repository",
+        ":dynamodb-repository",
         ":usecase",
         ":model")
 
@@ -17,6 +18,7 @@ project(":app-service").projectDir = file("./application/app-service")
 
 project(":http-client").projectDir = file("./infraestructure/driven-adapters/http-client")
 project(":jpa-repository").projectDir = file("./infraestructure/driven-adapters/jpa-repository")
+project(":dynamodb-repository").projectDir = file("./infraestructure/driven-adapters/dynamodb-repository")
 
 project(":api-rest").projectDir = file("./infraestructure/entry-points/api-rest")
 

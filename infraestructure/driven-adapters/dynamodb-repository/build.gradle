@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(":usecase")
+    implementation project(":model")
+    implementation platform("software.amazon.awssdk:bom:2.20.26")
+    implementation "software.amazon.awssdk:dynamodb"
+    implementation "software.amazon.awssdk:dynamodb-enhanced"
+    implementation "org.springframework.boot:spring-boot-starter"
+}
